@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="main">
+
+        <header>
+            <h1>Image Resizer</h1>
+            <p>تغيير حجم الصورة وتنزيلها بسهولة .</p>
+        </header>
+
+        <div class="container">
+
+            <div class="file-upload-container">
+                <label class="custom-file-upload" for="file">
+                    <div class="icon">
+                        <img src="C:\Users\OUSSAMA\Videos\codes\image-resizer\image-resizer\uploadimage.svg" alt="Description of SVG" width="100" height="100">                          
+                    </div>
+                    <div class="text">
+                       <h1>
+                            <span>اضغط لتحميل الصورة</span>
+                       </h1>
+                       </div>
+                       <input type="file" id="file">
+                </label>
+                    
+            </div>
+
+            <div class="loader-container" style="display: none;">
+                <div class="loader"></div>
+            </div>
+
+            <div class="resize-image" style="display: none;">
+
+                <div class="settings">
+                    <div class="inputs">
+                        <div class="input-group">
+                            <label>العرض بالسنتيمتر</label>
+                            <input id="imageWidthCm" type="number" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label>العرض بالسنتيمتر</label>
+                            <input id="imageHeightCm" type="number" step="0.1">
+                        </div>
+                    </div>
+
+                    <button id="downloadImage">Download Image</button>
+                </div>
+
+                <div class="image">
+                    <img id="uploadedImage" alt="">
+                </div>
+            </div>
+                
+        </div>
+
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>
